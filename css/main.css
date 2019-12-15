@@ -1,0 +1,159 @@
+:root {
+  --primary-color: #61f2f5;
+  --secondary-color: #433a54;
+  --text-color: #444;
+  --icons-color: #fff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  color: var(--text-color);
+  max-height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.Header {
+  width: 100%;
+  height: 140px;
+}
+
+.Social-network > .container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Social-network {
+  background-color: var(--primary-color);
+}
+
+.Social-network__list {
+  display: flex;
+  align-items: center;
+}
+
+.Social-network__item {
+  margin-left: 1em;
+}
+
+.Social-network__link {
+  color: var(--icons-color);
+}
+
+.Social-network__link:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 1em;
+  }
+}
+
+/* Seccion About */
+.About {
+  background-image: url('https://images.pexels.com/photos/34140/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.About > .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Nav-logo__container,
+.Profile-link {
+  display: flex;
+  align-items: center;
+}
+
+.Nav-logo__container {
+  width: 50%;
+}
+
+
+.Profile-link {
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.Nav-logo__img {
+  width: 70%;
+}
+
+.Profile-link {
+}
+
+.Profile-link a {
+  text-decoration: underline;
+  color: var(--icons-color);
+}
+
+.Profile-banner {
+  width: 50%;
+  margin: 0 auto;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%);
+  position: absolute;
+  text-align: center;
+  padding: 2em 1em;
+  color: var(--icons-color);
+}
+
+.Profile-banner__title {
+  font-size: 44px;
+}
+
+.Profile-banner__button {
+  background-color: var(--primary-color);
+  border: none;
+  outline: none;
+  padding: 1em 1.5em;
+  font-weight: bold;
+  border-radius: 3px;
+  color: var(--icons-color);
+  cursor: pointer;
+}
